@@ -1,0 +1,111 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+}
+
+.container {
+    display: flex;
+    width: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    width: 40%;
+    height: auto;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.product-type {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.text-container p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price-container h2 {
+    font-size: 2.5em;
+}
+
+.price-container p {
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 70%;
+    }
+
+    .image-container {
+        flex: 1;
+
+        background-image: url('images/image-product-mobile.jpg');
+        width: auto;
+        height: 50%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .text-container {
+        flex: 1.5;
+    }
+
+    .text-container p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .btn {
+        padding: 15px 0 15px 0;
+    }
+
+}
+
+.attribution {
+    margin-top: 20px;
+}
