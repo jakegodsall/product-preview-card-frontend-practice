@@ -19,12 +19,15 @@ html body .container {
   width: 350px;
   height: 600px;
 }
-html body .container .container__image {
+html body .container__image {
   flex: 4;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-html body .container .container__text {
+html body .container__text {
   flex: 5;
   padding: 20px;
+}
+html body .container__text__product-type {
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
