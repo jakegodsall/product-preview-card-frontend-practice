@@ -1,0 +1,51 @@
+$fraunces: 'Fraunces',
+serif;
+$monserrat: 'Montserrat',
+sans-serif;
+$fontSize: 14px;
+$darkCyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$veryDarkBlue: hsl(212, 21%, 14%);
+$darkGreyBlue: hsl(228, 12%, 48%);
+
+html {
+    font-size: $fontSize;
+
+    body {
+        width: 100vw;
+        height: 100vh;
+
+        background-color: $cream;
+        
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+
+            // box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 15px;
+
+            width: 350px;
+            height: 600px;
+        
+
+            .&__image {
+                flex: 4;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            .&__text {
+                flex: 5;
+                padding: 20px;
+            }
+        }
+    }
+}
